@@ -1,137 +1,112 @@
-# SKYRoN — راهنمای سایت معرفی
+﻿# SKYRoN — Structural Engineering Software
 
-لندینگ‌پیج مستقل و دو‌زبانه برای معرفی SKYRoN و دریافت درخواست بتای ۱۴روزه یا ماژول‌های انتخابی.
+**SKYRoN is a Windows desktop workspace for structural engineers.** It brings focused checks and model workflows together so engineers can spend less time repeating data-entry and transfer tasks and more time reviewing engineering decisions.
 
-این پروژه با HTML، CSS و JavaScript ساده ساخته شده است. برای انتشار به npm، مرحلهٔ build، سرور اختصاصی یا پایگاه داده نیاز ندارد و روی GitHub Pages قابل میزبانی است.
+This repository contains the **bilingual SKYRoN product website**, not the Windows application. The website is a static HTML/CSS/JavaScript project and can be served directly by GitHub Pages.
 
-## داخل بسته چه هست؟
+## What SKYRoN helps engineers do
 
-```text
-skyron-launch/
-├── index.html          صفحه و محتوای فارسی
-├── styles.css          طراحی، حالت موبایل و افکت‌ها
-├── app.js              ترجمهٔ انگلیسی و رفتارهای تعاملی
-├── assets/             تصویر محیط نرم‌افزار، گرافیک‌ها و فونت‌ها
-├── .nojekyll           انتشار مستقیم فایل‌های استاتیک
-└── README.md           همین راهنما
-```
+SKYRoN is being developed for building, industrial, oil and gas, mining, and power projects. The website groups the product tools by engineering task:
 
-### امکانات
+- **Steel Frame:** chevron-braced beam checks, beam fatigue and deflection, story drift, soft-story and weak-story checks, column overstrength, and strong-column/weak-beam checks.
+- **Analysis Assistance:** define a seismic system in SAP2000, review seismic scale factors, and compare modal and estimated periods.
+- **Ring Wall:** set tank and ring-wall geometry, prepare foundation design inputs, and organize the SAFE workflow for tank foundations.
+- **Model Builder:** select SAP2000 load cases, preview support reactions, map cases to SAFE load patterns, then review and approve the transfer.
+- **Connections:** a workspace for beam connection-related information.
+- **AI Assistant:** an optional assistant for project-context questions; engineers should verify responses before using them.
 
-- جابه‌جایی فارسی و انگلیسی با یک دکمه و تغییر خودکار RTL/LTR؛ حفظ انتخاب زبان در همان مرورگر.
-- گرافیک مفهومی قاب سازه با حرکت ملایم، واکنش به اسکرول و دکمهٔ تفکیک طبقات.
-- شش ماژول با تصویر اختصاصی، پنجرهٔ توضیحات و انتقال انتخاب ماژول به فرم درخواست.
-- نمایش مرحله‌ای مسیر SAP2000 → SKYRoN → SAFE هنگام اسکرول.
-- تصویر واقعی محیط نرم‌افزار با امکان بزرگ‌نمایی.
-- فرم درخواست بتای ۱۴روزه یا یک/چند ماژول؛ اعتبارسنجی، پیام موفقیت و مدیریت خطا.
-- پرسش‌های متداول، منوی موبایل، ناوبری کیبورد و رعایت تنظیم کاهش حرکت سیستم‌عامل.
-- فونت‌های محلی؛ بدون وابستگی به CDN یا اسکریپت تحلیلی شخص ثالث. تنها ارسال فرم به سرویس بیرونی وابسته است.
+The active model-transfer route is **SAP2000 → SKYRoN → SAFE**, with an engineer review before transfer. **ETABS integration is in development.** Tool availability can depend on the installed SKYRoN version and activation. The website’s animations and diagrams are illustrative; they are not analysis results or design approval.
 
-## ۱. پیش‌نمایش روی کامپیوتر
+## Trial and feedback
 
-برای مرور سریع، `index.html` را باز کنید. برای بررسی دقیق‌ترِ رفتار سایت و فرم، استفاده از یک سرور محلی توصیه می‌شود.
+- A **14-day trial** is requested through the website. The applicant provides the Machine ID shown in the SKYRoN activation window; access is reviewed and arranged manually.
+- Annual subscription pricing will be announced later.
+- An idea for a useful tool or workflow improvement that is reviewed and accepted for SKYRoN earns **three months of free subscription**.
+- Windows downloads are currently disabled on the website. No installer or application binaries are stored in this repository.
 
-اگر Python نصب است، ترمینال را در پوشهٔ `skyron-launch` باز کنید:
+## Run the website locally
+
+No package installation or build step is needed. Open PowerShell or a terminal in this repository and run:
 
 ```bash
 python -m http.server 8000
 ```
 
-در بعضی سیستم‌ها نام دستور `python3` است. سپس این آدرس را باز کنید:
+Then visit `http://localhost:8000/`. To preview the Persian version directly, open `http://localhost:8000/?lang=fa`; English is the default. Stop the server with `Ctrl+C`.
+
+Opening `index.html` directly may work for static content, but a local web server is recommended for reliable navigation and browser behavior.
+
+## Project structure
 
 ```text
-http://localhost:8000/
+.
+├── index.html                  Website content and page structure
+├── styles.css                  Main layout, themes, and responsive styles
+├── app.js                      Language switching, trial form, and interactions
+├── site-enhancements.css       Product diagrams, module motion, and enhancements
+├── site-enhancements.js        Interactive module and workflow explainers
+├── assets/
+│   ├── *.svg                   Module diagrams and product graphics
+│   ├── *.jpg, *.webp, *.png    Product and sector imagery
+│   ├── *.woff2                 Locally hosted fonts
+│   └── *-LICENSE.txt           Font license notices
+├── .nojekyll                   Serve static files without Jekyll processing
+└── README.md                   Product and website guide
 ```
 
-با `Ctrl+C` سرور متوقف می‌شود. برای این پیش‌نمایش نیازی به نصب پکیج Python ندارید.
+Keep `index.html`, the CSS/JavaScript files, and `assets/` together at the repository root. Asset paths are relative, so this layout works both locally and on a GitHub Pages project site. Keep the font license files with the font files.
 
-## ۲. انتشار روی GitHub Pages
+## Publish with GitHub Pages
 
-اگر همین حالا مخزن سایت را دارید، از همان استفاده کنید. قبل از جایگزینی فایل‌های قدیمی، یک نسخهٔ پشتیبان نگه دارید.
+1. In the repository, open **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select the `main` branch and the `/(root)` folder, then save.
+4. Wait for the Pages deployment to finish. GitHub displays the public site address on the Pages settings page.
 
-1. فایل ZIP را از حالت فشرده خارج کنید و پوشهٔ `skyron-launch` را باز کنید.
-2. در GitHub وارد مخزن سایت شوید؛ یا یک مخزن عمومی جدید بسازید، مثلاً `skyron`.
-3. در تب **Code** گزینهٔ **Add file → Upload files** را انتخاب کنید.
-4. **محتویات داخل پوشه** را در ریشهٔ مخزن آپلود کنید: `index.html`، `styles.css`، `app.js` و پوشهٔ `assets`. خود فایل ZIP یا پوشهٔ والد را به‌جای این فایل‌ها آپلود نکنید.
-5. فایل مخفی `.nojekyll` را هم اضافه کنید. اگر در فایل‌منیجر دیده نمی‌شود، با **Add file → Create new file** آن را بسازید و یک خط خالی در محتوا بگذارید. نام فایل دقیقاً `.nojekyll` باشد.
-6. تغییرات را با **Commit changes** ذخیره کنید.
-7. به **Settings → Pages** بروید.
-8. در **Build and deployment**، گزینهٔ **Source** را روی **Deploy from a branch** بگذارید.
-9. شاخهٔ دارای فایل‌ها، معمولاً `main`، و پوشهٔ **/(root)** را انتخاب کنید و **Save** را بزنید.
-10. پس از تکمیل استقرار، آدرس منتشرشده در همان صفحه نمایش داده می‌شود. وضعیت اجرا را در تب **Actions** نیز می‌توانید ببینید.
+The site uses local assets and does not require a build tool, package manager, or server runtime. The trial request form depends on its configured external form service; verify the form recipient and complete a real end-to-end test after publishing.
 
-برای مخزن نمونهٔ `skyron`، آدرس معمول به این شکل است:
+## Language, contact, and content notes
 
-```text
-https://YOUR-USERNAME.github.io/skyron/
+- English is the default. The language switch supports Persian and English; `?lang=fa` and `?lang=en` open a chosen language.
+- Persian copy is written for Persian-speaking engineers and uses right-to-left layout. The site includes local Vazirmatn and Space Grotesk fonts.
+- The creator contact links are `shahin.ma49@gmail.com` and [Shahin’s LinkedIn profile](https://www.linkedin.com/in/shahin-manouchehri/). The [SKYRoN LinkedIn page](https://www.linkedin.com/company/skyron-software/) is linked in the footer.
+- Product diagrams and motion graphics explain workflows only. They are not engineering calculations, code checks, or a substitute for professional review.
+- SAP2000, SAFE, and ETABS are product names owned by their respective trademark holders. Their mention does not imply endorsement or affiliation.
+
+---
+
+## راهنمای فارسی
+
+**SKYRoN یک نرم‌افزار ویندوزی برای مهندس‌های طراح سازه است.** ابزارهای پرکاربرد را کنار هم می‌آورد تا مهندس وقت کمتری صرف کارهای تکراری و جابه‌جایی اطلاعات کند و بیشتر روی بررسی و تصمیم‌های مهندسی تمرکز داشته باشد.
+
+این مخزن فایل‌های **وب‌سایت دو‌زبانهٔ SKYRoN** را دارد، نه فایل نصب نرم‌افزار. سایت با HTML، CSS و JavaScript ساخته شده و برای اجرا به نصب کتابخانه یا مرحلهٔ ساخت نیاز ندارد.
+
+### قابلیت‌های نرم‌افزار
+
+- **قاب فولادی:** کنترل تیر شورون، خستگی و خیز تیر، دریفت طبقه، طبقهٔ نرم و ضعیف، تشدید نیروی ستون و کنترل تیر ضعیف ـ ستون قوی.
+- **دستیار تحلیل:** افزودن سیستم لرزه‌ای به SAP2000، هم‌پایه‌سازی ضریب مقیاس زلزله و بررسی دورهٔ تناوب واقعی و تخمینی.
+- **رینگ‌وال مخزن:** تعریف هندسهٔ مخزن و فونداسیون حلقوی، آماده‌سازی ورودی‌های طراحی و مسیر کاری SAFE.
+- **Model Builder:** انتخاب حالت‌های بار SAP2000، دیدن واکنش‌های تکیه‌گاهی، نگاشت بارها به SAFE و تأیید مهندس پیش از انتقال.
+- **اتصالات:** محیطی برای کار با اطلاعات مربوط به اتصالات تیر.
+- **دستیار هوش مصنوعی:** پاسخ‌گویی به پرسش‌های مرتبط با پروژه؛ پاسخ‌ها باید پیش از استفاده بررسی شوند.
+
+مسیر فعال انتقال اطلاعات **SAP2000 به SAFE** است و انتقال پس از بررسی و تأیید مهندس انجام می‌شود. ارتباط با **ETABS در حال توسعه** است. ابزارهای در دسترس ممکن است با نسخه و شرایط فعال‌سازی فرق کنند. تصویرها و موشن‌های سایت برای توضیح ایدهٔ گردش‌کارند و نتیجهٔ تحلیل یا تأیید طراحی نیستند.
+
+### نسخهٔ آزمایشی و پیشنهادها
+
+- برای درخواست **۱۴ روز استفادهٔ آزمایشی**، فرم سایت را پر کنید و Machine ID پنجرهٔ فعال‌سازی را بنویسید. درخواست بررسی می‌شود و دسترسی فعلاً به‌صورت دستی هماهنگ می‌شود.
+- قیمت اشتراک سالانه بعداً اعلام می‌شود.
+- اگر پیشنهاد کاربردی برای ابزار یا بهترشدن روند کار پس از بررسی پذیرفته و به SKYRoN اضافه شود، **سه ماه اشتراک رایگان** تعلق می‌گیرد.
+- دانلود نسخهٔ ویندوز فعلاً در سایت غیرفعال است و فایل نصب در این مخزن قرار ندارد.
+
+### اجرای سایت در کامپیوتر
+
+در ترمینال همین پوشه اجرا کنید:
+
+```bash
+python -m http.server 8000
 ```
 
-اگر نام مخزن `YOUR-USERNAME.github.io` باشد، آدرس سایت در ریشهٔ دامنه قرار می‌گیرد. نام فایل صفحهٔ اصلی باید دقیقاً `index.html` بماند.
+بعد `http://localhost:8000/` را باز کنید. برای دیدن مستقیم نسخهٔ فارسی از `http://localhost:8000/?lang=fa` استفاده کنید. زبان پیش‌فرض انگلیسی است. با `Ctrl+C` سرور محلی متوقف می‌شود.
 
-**ساختار صحیح در مخزن:** فایل `index.html` باید کنار `styles.css` و `app.js` باشد و پوشهٔ `assets` در همان سطح قرار بگیرد. مسیر فایل‌ها نسبی است و نیازی به تغییر آن‌ها برای نام مخزن نیست.
-
-## ۳. تنظیم فرم — پیش از معرفی عمومی بررسی کنید
-
-فرم به شناسهٔ موجود در نسخهٔ قبلی شما متصل است:
-
-```text
-https://formspree.io/f/xjywwrdg
-```
-
-ایمیل تماس نمایشی نیز این است:
-
-```text
-shahin.ma49@gmail.com
-```
-
-- در حساب Formspree خود بررسی کنید که فرم فعال، ایمیل گیرنده تأییدشده و تنظیمات و سهمیهٔ دریافت مناسب باشد. اگر محدودیت دامنه تنظیم کرده‌اید، دامنهٔ سایت منتشرشده را مجاز کنید.
-- **ایمیل نمایشی سایت تعیین‌کنندهٔ گیرندهٔ فرم نیست.** گیرنده و اعلان‌های ارسال از داخل حساب Formspree تنظیم می‌شوند.
-- بعد از انتشار، یک درخواست آزمایشی واقعی با ایمیل خودتان بفرستید و دریافت آن را در داشبورد Formspree و صندوق ایمیل بررسی کنید.
-- در آزمون‌های توسعه، پاسخ موفق و ناموفق سرویس شبیه‌سازی شده است؛ **هیچ درخواست واقعی ارسال نشده و تحویل ایمیل تأیید نشده است.**
-- برای تغییر سرویس یا شناسه، مقدار `action` در فرم `#requestForm` در `index.html` را ویرایش کنید. کد JavaScript از همین مقدار استفاده می‌کند. سرویس جایگزین باید ارسال FormData و پاسخ JSON مرورگر را پشتیبانی کند؛ برای سرویس متفاوت ممکن است تغییر `app.js` لازم شود.
-- برای تغییر ایمیل تماس، همهٔ موارد `shahin.ma49@gmail.com` را در `index.html` و `app.js` جست‌وجو و جایگزین کنید.
-- هیچ رمز، کلید خصوصی یا توکن محرمانه‌ای داخل فایل‌های سایت قرار ندهید؛ مخزن و کد مرورگر قابل مشاهده هستند.
-
-**نکتهٔ مهم:** این صفحه فقط درخواست را ثبت می‌کند. ساخت حساب، تولید لایسنس، ارسال خودکار فایل نصب یا فعال‌سازی بتا در آن پیاده‌سازی نشده است. شروع دورهٔ ۱۴روزه پس از بررسی و هماهنگی با متقاضی انجام می‌شود.
-
-## ۴. ویرایش محتوا و ظاهر
-
-| موضوع | محل ویرایش |
-|---|---|
-| متن‌های فارسی صفحه | `index.html`، عناصر دارای `data-i18n` |
-| متن‌های فارسی پیام‌ها و جزئیات ماژول | `app.js`، بخش‌های `fa` و `modules` |
-| ترجمهٔ انگلیسی | `app.js`، شیء `en` و بخش `modules` |
-| رنگ‌ها و استایل | `styles.css`، به‌ویژه متغیرهای ابتدای فایل |
-| عکس محیط نرم‌افزار | `assets/skyron-workspace.webp` |
-| تصاویر شش ماژول | فایل‌های SVG در `assets` |
-| شمارهٔ نسخهٔ نمایشی | جست‌وجوی `2.2.1` در `index.html` و `app.js` |
-
-برای تعویض عکس، نسبت تصویر مشابه نگه دارید یا اندازه‌های تصویر را در HTML هم اصلاح کنید. هنگام ویرایش متن‌ها، نام کلیدهای `data-i18n` را بدون هماهنگ‌کردن JavaScript تغییر ندهید.
-
-می‌توانید لینک زبان مشخص را مستقیم به اشتراک بگذارید:
-
-```text
-https://YOUR-USERNAME.github.io/skyron/?lang=fa
-https://YOUR-USERNAME.github.io/skyron/?lang=en
-```
-
-پارامتر زبان بر انتخاب ذخیره‌شدهٔ قبلی اولویت دارد. در نبود پارامتر و انتخاب ذخیره‌شده، زبان اولیه فارسی است.
-
-## ۵. بررسی انجام‌شده
-
-آزمون خودکار در Chromium با Playwright انجام شده است:
-
-- فارسی/انگلیسی، ذخیرهٔ انتخاب زبان و لینک دارای پارامتر زبان.
-- عرض‌های ۳۲۰ تا ۱۹۲۰ پیکسل و بررسی نبود اسکرول افقی.
-- بارگیری تصاویر، منوی موبایل، پنجره‌های ماژول، بزرگ‌نمایی عکس و پرسش‌های متداول.
-- انتخاب ماژول، اعتبارسنجی فرم، ارسال موفق/ناموفق شبیه‌سازی‌شده و بازنشانی فرم.
-- تنظیم کاهش حرکت و نمایش محتوای اصلی در حالت غیرفعال‌بودن JavaScript.
-- بررسی خودکار axe برای قواعد WCAG A/AA در صفحه و پنجره‌های بررسی‌شده: بدون مورد گزارش‌شده. این نتیجه جایگزین ارزیابی دستی کامل دسترس‌پذیری نیست.
-
-آزمون روی دستگاه فیزیکی iOS/Android و مرورگرهای Safari/Firefox انجام نشده است. پس از انتشار، بررسی نهایی روی دستگاه‌های مخاطبان و ارسال واقعی فرم توصیه می‌شود. بدون JavaScript، محتوای اصلی و راه تماس ایمیلی قابل استفاده است؛ امکانات تعاملی به JavaScript نیاز دارند.
-
-## فونت‌ها و ملاحظات محتوا
-
-فونت‌های Vazirmatn و Space Grotesk به‌صورت محلی همراه فایل مجوز SIL Open Font License در `assets` قرار دارند؛ فایل‌های مجوز را همراه فونت‌ها نگه دارید.
-
-گرافیک سازه و نمودار جریان کار، مفهومی‌اند و خروجی تحلیل مهندسی نیستند. تصویر محیط نرم‌افزار از تصویر ارائه‌شده برای پروژه تهیه شده است. نام SAP2000 و SAFE صرفاً برای معرفی ارتباط گردش‌کار استفاده شده و به معنی وابستگی یا تأیید سازندگان آن‌ها نیست.
+برای اجرای درست روی GitHub Pages، فایل `index.html`، فایل‌های CSS و JavaScript و پوشهٔ `assets/` باید کنار هم و در ریشهٔ مخزن باشند. برای انتشار، در **Settings → Pages** شاخهٔ `main` و پوشهٔ `/(root)` را انتخاب کنید. فایل‌های فونت را همراه مجوزشان نگه دارید.

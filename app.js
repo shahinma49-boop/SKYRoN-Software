@@ -13,12 +13,14 @@
     fa[el.getAttribute(attr)] = target === 'textContent' ? el.textContent : el.getAttribute(target);
   }));
   Object.assign(fa, {
+    ...Object.fromEntries(Object.entries({"skip":"برو به محتوای اصلی","navModules":"کاربردها","navWorkflow":"جریان کار","navWorkspace":"محیط نرم‌افزار","navAccess":"درخواست نسخهٔ آزمایشی","navLabel":"منوی اصلی","menuOpen":"باز کردن منو","menuClose":"بستن منو","heroEyebrow":"ابزارهای مهندسی سازه، یک‌جا و بی‌دردسر","heroLine1":"تمرکز روی سازه؛","heroLine2":"نه جابه‌جایی اطلاعات.","heroDescription":"مدل را بررسی کن، واکنش‌ها را ببین و بعد تصمیم بگیر. SKYRoN ابزارهای مهندس سازه را در یک محیط کاری برای ویندوز کنار هم می‌آورد.","heroCta":"۱۴ روز رایگان امتحان کن","heroSecondary":"ببین چه کارهایی می‌شود کرد","heroPlatform":"محیط کاری ویندوز","connectionTitle":"در کنار نرم‌افزارهایی که می‌شناسی","connectionNote":"هر انتقال را خودت بررسی و تأیید می‌کنی.","modulesTitle1":"کدام کار مهندسی؟","modulesTitle2":"برای همان کار ابزار هست.","modulesIntro":"قاب فولادی، تحلیل زلزله، طراحی دیوار حلقوی و انتقال واکنش‌ها؛ قابلیت‌های آماده را ببین.","steelTitle":"قاب فولادی","steelSummary":"ابزارهای اعضای فولادی، گزارش تیر و بررسی خستگی در کنار SAP2000.","analysisTitle":"تحلیل و طراحی لرزه‌ای","analysisSummary":"کاتالوگ سیستم‌های لرزه‌ای ASCE 7-22 و پیش‌نمایش محاسبات قابل‌بررسی.","ringTitle":"دیوار حلقوی مخزن","ringSummary":"طراحی فونداسیون حلقوی مخزن برای کاربردهایی مثل صنعت نفت و گاز.","builderTitle":"انتقال واکنش به SAFE","builderSummary":"بار را از SAP2000 انتخاب کن، واکنش‌ها را ببین و پس از بررسی به SAFE منتقل کن.","connectionsTitle":"ابزار اتصال تیر","connectionsSummary":"رابط و داده‌های اتصالات تیر، در فضای کاری SKYRoN.","aiTitle":"دستیار هوش مصنوعی","aiSummary":"دستیار به تنظیمات و قابلیت‌های فعال خودت وابسته است؛ پاسخ‌ها را هم بررسی کن.","engineeringNote":"SKYRoN به کار مهندس کمک می‌کند؛ بررسی ورودی و نتیجه با خود مهندس است.","workflowTitle":"اول واکنش‌ها را ببین. بعد انتقال بده.","workflowIntro":"مسیر فعال Model Builder: بارهای SAP2000، پیش‌نمایش واکنش‌ها و انتقال بررسی‌شده به SAFE.","mappingLabel":"مسیر فعال","workflowGate":"تأیید نهایی","approvalRequired":"تأیید مهندس","workflowCaption":"نمای مفهومی جریان کار، نه نتیجهٔ واقعی تحلیل.","step1Title":"حالت‌های بار را انتخاب کن.","step1Text":"بارهای SAP2000 را انتخاب کن و اطلاعات را پیش از ادامه ببین.","step2Title":"قبل از انتقال، نتیجه را ببین.","step2Text":"واکنش‌ها و نگاشت بارها به SAFE را مرور کن.","step3Title":"انتقال با تأیید تو.","step3Text":"بعد از بررسی خودت، واکنش‌ها را به SAFE بفرست.","workspaceTitle1":"پروژه‌هایت.","workspaceTitle2":"همه یک‌جا.","workspaceIntro":"پروژه‌ها و ابزارها را از یک داشبورد باز کن و از همان‌جا ادامه بده.","screenshotCaption":"تصویر واقعی SKYRoN · نسخهٔ ۲.۲.۱.","feature1Title":"ادامه از همان‌جا","feature1Text":"پروژه‌های اخیر را از داشبورد باز کن.","feature2Title":"پروژه، همراهت","feature2Text":"اطلاعات را در بستهٔ قابل‌انتقالٔ .skyron نگه دار.","feature3Title":"ابزارها دم دستت","feature3Text":"از داشبورد مستقیم به ماژول‌های کاری برو.","supportTitle":"وضعیت ارتباط نرم‌افزارها","supportNote":"مسیر SAP2000 فعال است · ارتباط ETABS در دست توسعه است","betaBadge":"آزمایش رایگان SKYRoN","accessTitle1":"در پروژهٔ بعدی‌ات","accessTitle2":"خودت امتحانش کن.","accessIntro":"برای گرفتن لایسنس ۱۴روزهٔ رایگان فرم را بفرست؛ بعد از بررسی، لایسنس برایت صادر می‌شود.","trialNumber":"۱۴","trialTitle":"روز استفادهٔ رایگان","trialNote":"دوره از روز صدور لایسنس شروع می‌شود.","pricingNote":"قیمت اشتراک سالانه به‌زودی اعلام می‌شود.","directQuestion":"سؤالی داری؟","requestLegend":"برای کدام ابزار درخواست می‌دهی؟","optionBeta":"آزمایش ۱۴روزه","optionBetaNote":"درخواست لایسنس","optionModules":"ماژول انتخابی","optionModulesNote":"ابزارهای مورد نیازت","selectModules":"ماژول‌ها را انتخاب کن","machineLabel":"شناسهٔ دستگاه (Machine ID)","machinePlaceholder":"شناسه را کپی کن و اینجا بچسبان","machineHelp":"برنامه را باز کن؛ در پنجرهٔ فعال‌سازی روی Copy بزن و شناسه را اینجا بگذار.","nameLabel":"اسم و فامیلت","namePlaceholder":"اسمت را بنویس","emailLabel":"ایمیلت","roleLabel":"حوزهٔ کاری","rolePlaceholder":"انتخاب کن","roleEngineer":"مهندس سازه","roleDesigner":"طراح سازه","roleManager":"مدیر مهندسی","roleStudent":"دانشجو یا پژوهشگر","roleOther":"سایر","messageLabel":"توضیح یا سؤالت","messagePlaceholder":"مختصر بگو چه پروژه‌ای داری یا چه کمکی لازم داری.","messageHelp":"کوتاه بنویس؛ کافی است.","consentText":"قبول دارم برای پاسخ با ایمیل با من تماس گرفته شود.","submit":"ثبت درخواست لایسنس","privacyNote":"بعد از بررسی درخواست، برای هماهنگی صدور لایسنس ایمیل می‌زنم.","successTitle":"درخواستت رسید.","successText":"ممنون! برای هماهنگی نصب و لایسنس با تو تماس می‌گیرم.","sendAnother":"فرم دیگری بفرست","faqTitle":"چند نکته پیش از شروع","faq1Q":"۱۴ روز رایگان چطور کار می‌کند؟","faq1A":"درخواست را بفرست. پس از بررسی، لایسنس دستگاهت را می‌فرستم. ۱۴ روز از روز صدور حساب می‌شود.","faq2Q":"Machine ID را کجا پیدا کنم؟","faq2A":"در پنجرهٔ فعال‌سازی برنامه، روبه‌روی Machine ID روی Copy بزن و شناسه را در فرم بچسبان.","faq3Q":"کدام مسیرها آماده‌اند؟","faq3A":"مسیر فعال انتقال واکنش از SAP2000 به SAFE است؛ ارتباط ETABS در دست توسعه است.","faq4Q":"برای باگ یا ایده اشتراک می‌دهید؟","faq4A":"برای باگی که بشود تکرارش کرد یا ایده‌ای که بعد از بررسی تأیید شود، سه ماه اشتراک رایگان می‌گیری.","feedbackTitle":"باگی پیدا کردی یا ایده‌ای داری؟","feedbackCopy":"گزارش باگ را با مراحل تکرارش بفرست. باگ تکرارپذیر یا ایدهٔ تأییدشده سه ماه اشتراک رایگان دارد.","feedbackCta":"ارسال باگ یا ایده با ایمیل","footerStatement":"ابزارهای مهندسی سازه، یک‌جا.","description":"محیط کاری ویندوزی SKYRoN برای مهندسی سازه، انتقال واکنش SAP2000 به SAFE و درخواست لایسنس رایگان ۱۴روزه.","nameError":"اسم و فامیلت را بنویس.","emailError":"یک آدرس ایمیل درست وارد کن."})),
     title: 'SKYRoN — مهندسی، با جریان روشن‌تر',
     description: $('meta[name="description"]').content,
     nameError: 'نام و نام خانوادگی خود را وارد کنید.',
     emailError: 'یک آدرس ایمیل معتبر وارد کنید.',
     modulesError: 'دست‌کم یک ماژول را انتخاب کنید.',
     consentError: 'برای پاسخ به درخواست، موافقت شما با تماس ایمیلی لازم است.',
+    machineError: 'شناسهٔ دستگاه را از پنجرهٔ فعال‌سازی برنامه وارد کن.',
     sending: 'در حال ارسال…',
     submitError: 'ارسال انجام نشد. اطلاعات شما حفظ شده است؛ دوباره تلاش کنید یا به این آدرس ایمیل بزنید:',
     timeoutError: 'پاسخ سرویس دریافت نشد. اتصال اینترنت را بررسی و دوباره تلاش کنید. راه ارتباطی دیگر:',
@@ -92,15 +94,17 @@
     submitError: 'Your request was not sent. Your entries are still here. Try again, or email us directly:',
     timeoutError: 'The service did not respond. Check your connection and try again, or email us directly:'
   };
-  let language = 'fa';
+  let language = 'en';
+  Object.assign(en, {loadCases:'LOAD CASES',reviewSafe:'REVIEW / SAFE', callTank:'STORAGE TANK',callTankSub:'RING-WALL FOUNDATION',callRack:'PIPE RACK',callRackSub:'SUPPORT FRAMES',callBuilding:'PLANT BUILDING',callBuildingSub:'STEEL + CONCRETE',callPower:'POWER CORRIDOR',callPowerSub:'TRANSMISSION TOWERS',plantDiagramLabel:'Oil and gas facility with storage tanks, ring-wall foundations, pipe racks, plant building and transmission towers',plantMapLabel:'INDUSTRIAL STRUCTURE MAP',conceptOnly:'CONCEPT · NOT ANALYSIS DATA',sectorCaption:'OIL & GAS · BUILDINGS · POWER',engineeringFocus:'DESIGNED FOR STRUCTURAL ENGINEERS',heroEyebrow:'Less repetition. More engineering.',heroLine1:'Put your time',heroLine2:'into the structure.',heroDescription:'SKYRoN connects focused structural design tools, so engineers spend less time repeating transfers and more time making sound engineering decisions.',heroCta:'Try the 14-day trial',heroSecondary:'Explore the toolkit',exploreModule:'See how it works'});
+  Object.assign(fa, {loadCases:'حالت‌های بار',reviewSafe:'بررسی / SAFE', callTank:'مخزن ذخیره',callTankSub:'فونداسیون رینگ‌وال',callRack:'پایپ‌رک',callRackSub:'قاب‌های نگهدارنده',callBuilding:'ساختمان صنعتی',callBuildingSub:'فولادی و بتنی',callPower:'مسیر انتقال برق',callPowerSub:'دکل‌های انتقال',plantDiagramLabel:'نمای شماتیک مجتمع نفت و گاز شامل مخزن، فونداسیون رینگ‌وال، پایپ‌رک، ساختمان صنعتی و دکل انتقال برق',plantMapLabel:'سازه‌ها در یک نگاه',conceptOnly:'تصویر مفهومی · نه خروجی تحلیل',sectorCaption:'نفت و گاز · ساختمان · برق',engineeringFocus:'برای مهندس طراح سازه',heroEyebrow:'کار تکراری کمتر؛ فرصت بیشتر برای مهندسی',heroLine1:'وقت‌تان را',heroLine2:'صرف طراحی سازه کنید.',heroDescription:'SKYRoN ابزارهای طراحی سازه را به هم وصل می‌کند تا وقت کمتری صرف انتقال‌های تکراری شود و فرصت بیشتری برای بررسی و تصمیم مهندسی داشته باشید.',heroCta:'شروع آزمایشی ۱۴روزه',heroSecondary:'دیدن ابزارها',exploreModule:'ببین چطور کار می‌کند'});
+
+  Object.assign(en, {"existingDownload":"Standalone Windows installer coming soon","updateDownload":"Existing users: download the signed update package","installerUnavailable":"Windows installer distribution is being prepared.","machineLabel":"SKYRoN Machine ID (from the activation window)","machinePlaceholder":"Paste your Machine ID here","machineHelp":"Open SKYRoN. In the activation window, click Copy next to Machine ID, then paste it here.","pricingNote":"Annual subscription price: coming soon.","supportTitle":"Software compatibility","supportNote":"SAP2000 → SAFE transfer active · ETABS integration is in development.","feedbackTitle":"Have an idea to make SKYRoN more useful?","feedbackCopy":"Suggest a practical tool, a new feature, or a way to improve your workflow. If your suggestion is reviewed and added to SKYRoN, you’ll receive three months of free subscription.","feedbackCta":"Share an idea with Shahin","companyLinkedin":"SKYRoN on LinkedIn ↗"});
+  Object.assign(fa, {"machineError":"شناسهٔ دستگاه را از پنجرهٔ فعال‌سازی بنویس.","successTitle":"درخواستت رسید.","successText":"ممنون! بعد از بررسی درخواست و شناسهٔ دستگاه، برای هماهنگی لایسنس ایمیل می‌زنم.","feedbackCopy":"اگر ابزار کاربردی، قابلیت تازه یا راهی برای ساده‌ترشدن کار با نرم‌افزار به ذهنت می‌رسد، برایم بنویس. پیشنهادهایی که پس از بررسی به SKYRoN اضافه شوند، سه ماه اشتراک رایگان دارند.","feedbackTitle":"برای بهتر شدن SKYRoN ایده‌ای داری؟","feedbackCta":"فرستادن پیشنهاد برای شاهین","pricingNote":"قیمت اشتراک سالانه به‌زودی اعلام می‌شود.","companyLinkedin":"لینکدین SKYRoN ↗"});
   let activeModule = null;
   let submitting = false;
   let attempted = false;
   const t = key => (language === 'en' ? en[key] : fa[key]) ?? fa[key] ?? key;
   const form = $('#requestForm');
-  const moduleOptions = $('#moduleOptions');
-  const moduleChecks = $$('input[name="modules"]', form);
-  const moduleNames = ['steel', 'analysis', 'ring', 'builder', 'connections', 'ai'];
   const modules = {
     steel: { label: 'STEEL FRAME', fa: ['ابزارهای اعضای فولادی در ارتباط با SAP2000', 'دسترسی به گزارش‌گیری تیر', 'گردش‌کار بررسی خستگی'], en: ['Steel member tools alongside SAP2000', 'Access to beam reporting', 'A workflow for fatigue checks'] },
     analysis: { label: 'ANALYSIS ASSISTANCE', fa: ['کاتالوگ سیستم‌های لرزه‌ای ASCE/SEI 7-22', 'پیش‌نمایش محاسبات برای بررسی مهندس', 'پشتیبانی از برخی تخصیص‌ها در SAP2000'], en: ['ASCE/SEI 7-22 seismic systems catalogue', 'Calculation previews for engineering review', 'Support for selected assignments in SAP2000'] },
@@ -113,6 +117,7 @@
   function applyLanguage(next) {
     language = next === 'en' ? 'en' : 'fa';
     document.documentElement.lang = language;
+    document.querySelector('meta[name=theme-color]').content = document.documentElement.dataset.theme === 'light' ? '#f2f5f2' : '#101714';
     document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
     bindings.forEach(([attr, target]) => $$(`[${attr}]`).forEach(el => {
       const text = t(el.getAttribute(attr));
@@ -134,6 +139,9 @@
     requestAnimationFrame(updateScroll);
   }
   $('#languageSwitch').addEventListener('click', () => applyLanguage(language === 'fa' ? 'en' : 'fa'));
+  document.documentElement.dataset.theme=localStorage.getItem('skyron-theme')==='dark'?'dark':'light';
+  document.documentElement.classList.toggle('light-theme',document.documentElement.dataset.theme==='light');
+  $('#themeSwitch').addEventListener('click',()=>{const light=document.documentElement.dataset.theme!=='light';document.documentElement.dataset.theme=light?'light':'dark';document.documentElement.classList.toggle('light-theme',light);localStorage.setItem('skyron-theme',light?'light':'dark');});
 
   // Small-screen navigation: normal links, Escape and outside-click support.
   const menuButton = $('.menu-toggle');
@@ -163,43 +171,55 @@
     $$('.reveal').forEach(el => reveals.observe(el));
   }
   const steps = $$('.workflow-step');
+  const graphic = $('#workflowGraphic');
   const progressBar = $('.scroll-progress');
   let scrollScheduled = false;
   function updateScroll() {
     scrollScheduled = false;
     const max = document.documentElement.scrollHeight - innerHeight;
     progressBar.style.transform = `scaleX(${max > 0 ? scrollY / max : 0})`;
-    const graphic = $('#workflowGraphic');
-    const mobile = innerWidth <= 700;
-    const line = mobile ? Math.min(innerHeight * .82, graphic.getBoundingClientRect().bottom + 125) : innerHeight * .53;
-    let nearest = 0, distance = Infinity;
-    steps.forEach((step, i) => {
-      const r = step.getBoundingClientRect();
-      const d = Math.abs(r.top + r.height / 2 - line);
-      if (d < distance) { distance = d; nearest = i; }
-    });
-    graphic.dataset.stage = String(nearest);
-    $('#workflowState').textContent = ['01 / SELECT', '02 / PREVIEW', '03 / TRANSFER'][nearest];
-    steps.forEach((step, i) => step.classList.toggle('is-active', i === nearest));
   }
   function scheduleScroll() { if (!scrollScheduled) { scrollScheduled = true; requestAnimationFrame(updateScroll); } }
   window.addEventListener('scroll', scheduleScroll, { passive: true });
   window.addEventListener('resize', scheduleScroll, { passive: true });
+  steps.forEach(step => {
+    step.setAttribute('role', 'button'); step.tabIndex = 0;
+    const activate = () => {
+      graphic.dataset.stage = step.dataset.step;
+      $('#workflowState').textContent = [t('workflowStage1'), t('workflowStage2'), t('workflowStage3')][Number(step.dataset.step)];
+      steps.forEach((item, i) => { item.classList.toggle('is-active', item === step); item.setAttribute('aria-pressed', String(item === step)); });
+    };
+    step.addEventListener('click', activate);
+    step.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); activate(); } });
+  });
 
   // Native dialogs provide focus containment, Escape and return-to-trigger behaviour.
   const moduleDialog = $('#moduleDialog');
   const screenshotDialog = $('#screenshotDialog');
   const checkIcon = '<svg class="icon" aria-hidden="true"><use href="#check"/></svg>';
+  const moduleAssets = { steel: 'module-steel.jpg', analysis: 'module-analysis.jpg', ring: 'module-ring.jpg', builder: 'module-builder.jpg', connections: 'module-connections.jpg', ai: 'module-ai.jpg' };
+  const moduleMotionSvg = {
+    steel: '<svg viewBox="0 0 960 550" aria-hidden="true"><path class="motion-trace" d="M180 96v332m126-332v332m127-332v332m126-332v332m-379-250h505m-505 124h505m-505 124h505"/><circle class="motion-pulse" cx="306" cy="222" r="12"/><circle class="motion-pulse delay-1" cx="560" cy="346" r="12"/></svg>',
+    analysis: '<svg viewBox="0 0 960 550" aria-hidden="true"><path class="motion-trace" d="M164 130q138-68 275 0t275 0m-550 90q138-68 275 0t275 0m-550 90q138-68 275 0t275 0"/><path class="motion-load" d="M276 82v78m-11-14 11 14 11-14m244-64v78m-11-14 11 14 11-14m-133 134v78m-11-14 11 14 11-14"/><circle class="motion-pulse" cx="438" cy="292" r="18"/></svg>',
+    ring: '<svg viewBox="0 0 960 550" aria-hidden="true"><ellipse class="motion-ring" cx="480" cy="342" rx="307" ry="120"/><ellipse class="motion-ring inner" cx="480" cy="342" rx="271" ry="99"/><path class="motion-load" d="M210 330v-86m-11 14 11-14 11 14m529 86v-86m-11 14 11-14 11 14m-259 7v-80m-11 14 11-14 11 14"/><circle class="motion-pulse" cx="480" cy="342" r="16"/></svg>',
+    builder: '<svg viewBox="0 0 960 550" aria-hidden="true"><path class="motion-trace" d="M183 294c115-147 226-147 339 0s189 76 250-22"/><circle class="motion-pulse" cx="183" cy="294" r="14"/><circle class="motion-pulse delay-1" cx="522" cy="294" r="14"/><circle class="motion-pulse delay-2" cx="772" cy="272" r="14"/></svg>',
+    connections: '<svg viewBox="0 0 960 550" aria-hidden="true"><path class="motion-trace" d="M235 90v360m38-360v360m26-360h489m-489 360h489"/><circle class="bolt-pulse" cx="317" cy="190" r="34"/><circle class="bolt-pulse delay-1" cx="317" cy="358" r="34"/><path class="motion-load" d="M450 275h175m-18-18 18 18-18 18"/></svg>',
+    ai: '<svg viewBox="0 0 960 550" aria-hidden="true"><rect class="chat-panel" x="665" y="80" width="210" height="290" rx="16"/><path class="chat-line line-a" d="M700 137h124"/><path class="chat-line line-b" d="M700 193h145"/><path class="chat-line line-c" d="M700 249h108"/><path class="chat-line line-d" d="M700 305h132"/><circle class="motion-pulse" cx="700" cy="420" r="12"/></svg>'
+  };
   function renderModule(key) {
     const data = modules[key];
     const body = $('#moduleDialogContent');
     body.replaceChildren();
-    const img = document.createElement('img');
-    img.className = 'dialog-art'; img.src = `${key}.svg`; img.alt = ''; img.width = 400; img.height = 200;
+    const visual = document.createElement('div'); visual.className = 'module-motion'; visual.dataset.module = key; visual.setAttribute('role', 'img'); visual.setAttribute('aria-label', t(key + 'Motion'));
+    const img = document.createElement('img'); img.className = 'motion-art'; img.src = `assets/${moduleAssets[key]}`; img.alt = ''; img.width = 960; img.height = 549; img.decoding = 'async';
+    const overlay = document.createElement('div'); overlay.className = 'motion-overlay'; overlay.innerHTML = moduleMotionSvg[key];
+    const motionTag = document.createElement('span'); motionTag.className = 'motion-tag mono'; motionTag.textContent = t('motionTag');
+    visual.append(img, overlay, motionTag);
     const content = document.createElement('div'); content.className = 'dialog-content';
     const eyebrow = document.createElement('span'); eyebrow.className = 'mono text-muted'; eyebrow.dir = 'ltr'; eyebrow.textContent = data.label;
     const title = document.createElement('h2'); title.id = 'moduleDialogTitle'; title.textContent = t(`${key}Title`);
     const description = document.createElement('p'); description.textContent = t(`${key}Summary`);
+    const motionCaption = document.createElement('p'); motionCaption.className = 'motion-caption'; motionCaption.id = 'moduleMotionDescription'; motionCaption.textContent = t(key + 'Motion');
     const list = document.createElement('ul'); list.className = 'dialog-features';
     data[language].forEach(text => {
       const li = document.createElement('li'); li.innerHTML = checkIcon;
@@ -210,14 +230,13 @@
     const request = document.createElement('button'); request.type = 'button'; request.className = 'button button-accent'; request.textContent = t('dialogRequest');
     request.addEventListener('click', () => {
       moduleDialog.close();
-      $('input[name="access_choice"][value="modules"]').checked = true;
-      moduleChecks[moduleNames.indexOf(key)].checked = true;
-      syncRequestType();
       $('#access').scrollIntoView({ behavior: motion.matches ? 'instant' : 'smooth' });
       $('#fullName').focus({ preventScroll: true });
     });
-    content.append(eyebrow, title, description, list, caveat, request); body.append(img, content);
+
+    content.append(eyebrow, title, description, motionCaption, list, caveat, request); body.append(visual, content);
     moduleDialog.setAttribute('aria-labelledby', title.id);
+    moduleDialog.setAttribute('aria-describedby', motionCaption.id);
   }
   $$('[data-details]').forEach(button => button.addEventListener('click', () => {
     activeModule = button.dataset.details; renderModule(activeModule); moduleDialog.showModal();
@@ -239,13 +258,10 @@
 
   // Formspree: send only on an explicit valid submission, never on a preview or page load.
   function syncRequestType() {
-    const individual = $('input[name="access_choice"]:checked', form).value === 'modules';
-    moduleOptions.hidden = !individual;
-    moduleChecks.forEach(check => { check.disabled = !individual; });
-    $('#requestType').value = individual ? 'Individual modules' : '14-day beta';
+    $('#machineId').required = true;
+    $('#requestType').value = '14-day trial license request';
     if (attempted) validate(false);
   }
-  $$('input[name="access_choice"]', form).forEach(input => input.addEventListener('change', syncRequestType));
   function setError(input, key, valid) {
     const error = $(`#${key}`);
     error.textContent = valid ? '' : t(key);
@@ -260,7 +276,7 @@
     const results = [
       [name, setError(name, 'nameError', name.value.trim().length > 0)],
       [email, setError(email, 'emailError', email.value.trim().length > 0 && email.validity.valid)],
-      [moduleChecks[0], setError(null, 'modulesError', moduleOptions.hidden || moduleChecks.some(check => check.checked))],
+      [$('#machineId'), setError($('#machineId'), 'machineError', $('#machineId').required ? $('#machineId').value.trim().length > 0 : true)],
       [consent, setError(consent, 'consentError', consent.checked)]
     ];
     const first = results.find(([, valid]) => !valid);
@@ -318,124 +334,61 @@
   syncRequestType();
   let initialLanguage = new URLSearchParams(location.search).get('lang');
   if (!['fa', 'en'].includes(initialLanguage)) {
-    try { initialLanguage = localStorage.getItem('skyron-language'); } catch { /* Persian default. */ }
+    try { initialLanguage = localStorage.getItem('skyron-language'); } catch { /* Language preference is optional. */ }
   }
-  applyLanguage(initialLanguage);
+  Object.assign(en, {
+    plantDiagramAlt:'Isometric oil and gas complex with storage tanks on ring-wall foundations, process columns, pipe racks, plant buildings and electrical substation',
+    plantMapLabel:'OIL & GAS STRUCTURES', conceptOnly:'CONCEPT RENDER · NOT ANALYSIS DATA',
+    sectorCaption:'RING-WALL TANKS · PROCESS STEEL · PIPE RACKS · POWER',
+    workflowTitle:'From SAP2000 reactions to a foundation model',
+    workflowIntro:'Follow the path: choose load cases, review support reactions and mapping, then approve the transfer into SAFE.',
+    workflowSceneLabel:'Three-dimensional illustration of a structural frame, mapped support reactions and a SAFE foundation model',
+    workflowCaption:'Concept visualization of the active SAP2000 to SAFE workflow. Your review and confirmation come before transfer.',
+    workflowStage1:'01 / LOAD CASES',workflowStage2:'02 / REVIEW REACTIONS',workflowStage3:'03 / CONFIRM TRANSFER',
+    sceneSource:'FRAME MODEL · SAP2000',sceneReactions:'SUPPORT REACTIONS',sceneTarget:'FOUNDATION · SAFE',sceneApproval:'ENGINEER REVIEW',
+    step1Title:'Choose the load cases',step1Text:'Select the completed SAP2000 cases you want to use. Check the inputs before moving on.',
+    step2Title:'Review reactions and mapping',step2Text:'Inspect support reactions and map each selected case to a SAFE load pattern.',
+    step3Title:'Confirm before transfer',step3Text:'Review the mapping, then approve the transfer of the selected reactions into SAFE.',
+    optionBeta:'14-day free trial',optionBetaNote:'Request access to the full suite with your SKYRoN Machine ID.',
+    installerNote:'Windows access starts with a 14-day trial request.',installerTrialCta:'Request trial access',dialogRequest:'Request the 14-day trial',
+    motionTag:'MOTION EXPLAINER · CONCEPT',
+    steelMotion:'Select a steel member, review its section and beam report, then run the fatigue checks you need.',
+    analysisMotion:'Choose a seismic system, enter project inputs and inspect a calculation preview before using it.',
+    ringMotion:'Set tank geometry, inspect the ring-wall foundation and prepare the next design step.',
+    builderMotion:'Select load cases → preview support reactions → map them to SAFE → review and confirm.',
+    connectionsMotion:'Inspect the beam-to-column connection and review its related connection data.',
+    aiMotion:'Ask with project context, review the assistant response and decide what to use in your design work.'
+  });
+  Object.assign(fa, {
+    plantDiagramAlt:'نمای سه‌بعدی مجتمع نفت و گاز با مخزن‌های روی فونداسیون رینگ‌وال، برج‌های فرایندی، پایپ‌رک، ساختمان صنعتی و پست برق',
+    plantMapLabel:'سازه‌های مجتمع نفت و گاز',conceptOnly:'رندر مفهومی · نه خروجی تحلیل',
+    sectorCaption:'مخزن رینگ‌وال · سازه فرایندی · پایپ‌رک · برق',
+    workflowTitle:'از واکنش‌های SAP2000 تا مدل فونداسیون',
+    workflowIntro:'مسیر را ببین: حالت‌های بار را انتخاب کن، واکنش‌ها و نگاشت را مرور کن و بعد انتقال به SAFE را تأیید کن.',
+    workflowSceneLabel:'نمای سه‌بعدی قاب سازه، واکنش‌های تکیه‌گاهی و فونداسیون در SAFE',
+    workflowCaption:'نمای مفهومی از مسیر فعال SAP2000 به SAFE؛ پیش از انتقال، خودت اطلاعات را مرور و تأیید می‌کنی.',
+    workflowStage1:'۰۱ / انتخاب بار',workflowStage2:'۰۲ / بررسی واکنش',workflowStage3:'۰۳ / تأیید انتقال',
+    sceneSource:'مدل قاب · SAP2000',sceneReactions:'واکنش‌های تکیه‌گاهی',sceneTarget:'فونداسیون · SAFE',sceneApproval:'بررسی مهندس',
+    step1Title:'حالت‌های بار را انتخاب کن',step1Text:'حالت‌های تحلیل کامل‌شدهٔ SAP2000 را انتخاب کن و پیش از ادامه، ورودی‌ها را ببین.',
+    step2Title:'واکنش‌ها و نگاشت را ببین',step2Text:'واکنش تکیه‌گاه‌ها را بررسی کن و هر حالت بار را به الگوی متناظر در SAFE وصل کن.',
+    step3Title:'پیش از انتقال تأیید کن',step3Text:'نگاشت را مرور کن و بعد انتقال واکنش‌های انتخاب‌شده به SAFE را تأیید کن.',
+    optionBeta:'۱۴ روز رایگان امتحان کن',optionBetaNote:'برای دسترسی به مجموعه، شناسهٔ SKYRoN خودت را وارد کن.',
+    installerNote:'برای شروع کار با نسخهٔ ویندوز، دسترسی آزمایشی ۱۴روزه بگیر.',installerTrialCta:'درخواست نسخهٔ آزمایشی',dialogRequest:'درخواست نسخهٔ آزمایشی ۱۴روزه',
+    motionTag:'نمای متحرک · مفهومی',
+    steelMotion:'عضو فولادی را انتخاب کن، مشخصات مقطع و گزارش تیر را ببین و کنترل خستگی را انجام بده.',
+    analysisMotion:'سیستم لرزه‌ای را انتخاب کن، ورودی‌های پروژه را بده و پیش‌نمایش محاسبه را بررسی کن.',
+    ringMotion:'ابعاد مخزن را وارد کن، فونداسیون رینگ‌وال را ببین و مرحلهٔ بعد طراحی را آماده کن.',
+    builderMotion:'حالت‌های بار را انتخاب کن ← واکنش‌ها را ببین ← به SAFE نگاشت کن ← مرور و تأیید کن.',
+    connectionsMotion:'اتصال تیر به ستون و اطلاعات مربوط به جزئیات اتصال را بررسی کن.',
+    aiMotion:'با توضیح شرایط پروژه سؤال بپرس، جواب دستیار را بخوان و دربارهٔ استفاده از آن تصمیم بگیر.'
+  });
+  Object.assign(en, {exploreModule:'See how it works',dialogRequest:'Request the 14-day trial'});
+  Object.assign(fa, {exploreModule:'ببین چطور کار می‌کند',dialogRequest:'درخواست نسخهٔ آزمایشی ۱۴روزه'});
+  Object.assign(en, {trialDays:'14',stepChip1:'SELECT / INPUT',stepChip2:'PREVIEW / MAP',stepChip3:'CONFIRM / TRANSFER'});
+  Object.assign(fa, {trialDays:'۱۴',stepChip1:'انتخاب / ورودی',stepChip2:'پیش‌نمایش / نگاشت',stepChip3:'تأیید / انتقال'});
+  Object.assign(en, {feedbackTitle:'Have an idea to make SKYRoN more useful?',feedbackCopy:'Suggest a practical tool, a new feature, or a way to improve your workflow. If your suggestion is reviewed and added to SKYRoN, you’ll receive three months of free subscription.',feedbackCta:'Share an idea with Shahin',companyLinkedin:'SKYRoN on LinkedIn ↗'});
+  Object.assign(fa, {feedbackTitle:'برای بهتر شدن SKYRoN ایده‌ای داری؟',feedbackCopy:'اگر ابزار کاربردی، قابلیت تازه یا راهی برای ساده‌ترشدن کار با نرم‌افزار به ذهنت می‌رسد، برایم بنویس. پیشنهادهایی که پس از بررسی به SKYRoN اضافه شوند، سه ماه اشتراک رایگان دارند.',feedbackCta:'فرستادن پیشنهاد برای شاهین',companyLinkedin:'لینکدین SKYRoN ↗'});
+  applyLanguage(initialLanguage || 'en');
   $('#year').textContent = String(new Date().getFullYear());
-  initStructure();
 
-  // Lightweight orthographic structural illustration. This is deliberately not analysis data.
-  function initStructure() {
-    const canvas = $('#structureCanvas');
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    const host = $('#heroVisual');
-    let width = 0, height = 0, ratio = 1, frame = 0;
-    let visible = true, exploded = false, separation = 0, yaw = -.58, mouseX = 0, mouseY = 0;
-    const xs = [-1.7, 0, 1.7], ys = [-1.15, 1.15], floors = 5;
-    const segments = [];
-    const add = (a, b, type = 'beam') => segments.push({ a, b, type });
-    for (let f = 0; f <= floors; f++) {
-      const z = f * .92;
-      xs.forEach(x => add([x, ys[0], z], [x, ys[1], z], 'beam'));
-      ys.forEach(y => add([xs[0], y, z], [xs[2], y, z], 'beam'));
-      if (f < floors) {
-        xs.forEach(x => ys.forEach(y => add([x, y, z], [x, y, z + .92], 'column')));
-        for (let bay = 0; bay < 2; bay++) {
-          add([xs[bay], ys[0], z], [xs[bay + 1], ys[0], z + .92], 'brace');
-          add([xs[bay + 1], ys[0], z], [xs[bay], ys[0], z + .92], 'brace');
-        }
-        add([xs[2], ys[0], z], [xs[2], ys[1], z + .92], 'brace');
-      }
-    }
-    function project(p, expand = true) {
-      const [x, y, sourceZ] = p;
-      const c = Math.cos(yaw), s = Math.sin(yaw);
-      const z = sourceZ + (expand ? sourceZ / .92 * separation * .15 : 0);
-      const scale = Math.min(width / 6.7, height / 8.6);
-      return [
-        width * .53 + (x * c - y * s) * scale,
-        height * .52 + ((x * s + y * c) * (.36 + mouseY * .015) - (z - 2.3) * .97) * scale,
-        x * s + y * c
-      ];
-    }
-    function line(a, b, colour, thickness = 1, dash = []) {
-      ctx.beginPath(); ctx.setLineDash(dash); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]);
-      ctx.strokeStyle = colour; ctx.lineWidth = thickness; ctx.stroke(); ctx.setLineDash([]);
-    }
-    function polygon(points, fill, stroke) {
-      ctx.beginPath(); points.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath();
-      ctx.fillStyle = fill; ctx.fill(); if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = .7; ctx.stroke(); }
-    }
-    function draw(time = 0) {
-      ctx.clearRect(0, 0, width, height);
-      const wantedYaw = -.58 + mouseX * .14 + (motion.matches ? 0 : Math.sin(time * .00015) * .045);
-      yaw += (wantedYaw - yaw) * .07;
-      separation += ((exploded ? 1 : 0) - separation) * (motion.matches ? 1 : .075);
-      // Ground grid, pad foundations and delicate construction guides.
-      for (let i = -5; i <= 5; i++) {
-        line(project([i * .7, -3.5, -.16], false), project([i * .7, 3.5, -.16], false), '#7acbd10c', .7);
-        line(project([-3.5, i * .7, -.16], false), project([3.5, i * .7, -.16], false), '#7acbd10c', .7);
-      }
-      xs.forEach(x => ys.forEach(y => {
-        polygon([[x-.23,y-.23,-.08],[x+.23,y-.23,-.08],[x+.23,y+.23,-.08],[x-.23,y+.23,-.08]].map(p => project(p, false)), '#7acbd10a', '#7acbd147');
-        line(project([x,y,0]), project([x,y,5.05]), '#7acbd117', .6, [3,5]);
-      }));
-      for (let f = 1; f <= floors; f++) {
-        const z = f * .92;
-        polygon([[xs[0],ys[0],z],[xs[2],ys[0],z],[xs[2],ys[1],z],[xs[0],ys[1],z]].map(p => project(p)), f === floors ? '#d0f2930b' : '#7acbd107');
-      }
-      const sorted = segments.map(edge => ({ ...edge, a2: project(edge.a), b2: project(edge.b) }))
-        .sort((a,b) => a.a2[2] + a.b2[2] - b.a2[2] - b.b2[2]);
-      sorted.forEach(edge => {
-        const front = (edge.a2[2] + edge.b2[2]) / 2 > -.3;
-        const brace = edge.type === 'brace', column = edge.type === 'column';
-        if (!brace) line(edge.a2, edge.b2, '#183b45', column ? 5.5 : 4.3);
-        line(edge.a2, edge.b2, brace ? '#d0f293ab' : front ? '#9fced3db' : '#5a919baf', brace ? 1 : column ? 1.6 : 1.35);
-        if (column) line([edge.a2[0]+2,edge.a2[1]], [edge.b2[0]+2,edge.b2[1]], '#7acbd13b', .7);
-      });
-      for (let f = 0; f <= floors; f++) xs.forEach(x => ys.forEach(y => {
-        const p = project([x, y, f * .92]); ctx.beginPath(); ctx.arc(p[0],p[1],1.75,0,Math.PI*2); ctx.fillStyle = '#c6e5dc'; ctx.fill();
-      }));
-      // Floor reference lines and a dimension mark are conceptual, without fabricated values.
-      for (let f = 0; f <= floors; f++) {
-        const p = project([-1.7, -1.15, f * .92]);
-        line([p[0]-26,p[1]], [p[0]-9,p[1]], '#7acbd158', .7);
-        ctx.fillStyle = '#839fa7'; ctx.font = '8px Space, sans-serif'; ctx.textAlign = 'right';
-        ctx.fillText(f === 0 ? 'BASE' : `L0${f}`, p[0]-31,p[1]+3);
-      }
-      const a = project([2.2,1.15,0]), b = project([2.2,1.15,4.6]);
-      line(a,b,'#7acbd140',.7); line([a[0]-4,a[1]],[a[0]+4,a[1]],'#7acbd170',.7); line([b[0]-4,b[1]],[b[0]+4,b[1]],'#7acbd170',.7);
-    }
-    function animate(time) {
-      frame = 0; draw(time);
-      if (visible && !document.hidden && !motion.matches) frame = requestAnimationFrame(animate);
-    }
-    function start() { if (!frame && visible && !document.hidden) frame = requestAnimationFrame(animate); }
-    function resize() {
-      width = host.clientWidth; height = host.clientHeight; ratio = Math.min(devicePixelRatio || 1, 2);
-      canvas.width = Math.round(width * ratio); canvas.height = Math.round(height * ratio);
-      ctx.setTransform(ratio,0,0,ratio,0,0); draw(); start();
-    }
-    if ('ResizeObserver' in window) new ResizeObserver(resize).observe(host);
-    else window.addEventListener('resize', resize);
-    if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
-      visible = entries[0].isIntersecting;
-      if (visible) start(); else { cancelAnimationFrame(frame); frame = 0; }
-    }).observe(host);
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) { cancelAnimationFrame(frame); frame = 0; } else start();
-    });
-    motion.addEventListener('change', () => { cancelAnimationFrame(frame); frame = 0; start(); });
-    host.addEventListener('pointermove', e => {
-      if (motion.matches || e.pointerType === 'touch') return;
-      const r = host.getBoundingClientRect(); mouseX = (e.clientX-r.left)/r.width-.5; mouseY = (e.clientY-r.top)/r.height-.5;
-    });
-    host.addEventListener('pointerleave', () => { mouseX = 0; mouseY = 0; });
-    $('#explodeButton').addEventListener('click', () => {
-      exploded = !exploded; $('#explodeButton').setAttribute('aria-pressed', String(exploded));
-      if (motion.matches) draw(); else start();
-    });
-    resize();
-  }
 })();
